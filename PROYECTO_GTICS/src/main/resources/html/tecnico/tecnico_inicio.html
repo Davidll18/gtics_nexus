@@ -21,58 +21,59 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-
-        <div class="dropdown">
-            <a class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="icono_usuario.png" alt="user" width="15" height="35" >
-            </a>
-            <ul class="dropdown-menu" style="">
-                <li><p class="dropdown-item" ><center>USUARIO</center></p></li>
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-            </ul>
-        </div>
-
-        <ul class="nav justify-content-center">
-             <img src="logo2.png" alt="LOGO" width="85" height="70">
-        </ul>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+<header data-bs-theme="dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icono_usuario.png" alt="user" width="15" height="35" >
+                </a>
+                <ul class="dropdown-menu" style="">
+                    <li><p class="dropdown-item" ><center>USUARIO</center></p></li>
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                 </ul>
-                <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+            </div>
+
+            <ul class="nav justify-content-center">
+                 <img src="logo2.png" alt="LOGO" width="85" height="70">
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 <br>
 <div class="card text-bg-dark">
     <img class="bd-placeholder-img bd-placeholder-img-lg card-img" width="100%" height="390" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false" src="tecnico_fondo.jpg">
@@ -82,5 +83,26 @@
 
     </div>
 </div>
+<br>
+
+<center>
+    <h2>¿Qué quieres hacer?</h2> <br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <p><a class="btn btn-secondary" href="#">Tickets Asignados</a></p>
+        </div>
+        <div class="col-lg-3">
+            <p><a class="btn btn-secondary" href="#">Desplazamiento</a></p>
+        </div>
+        <div class="col-lg-3">
+            <a class="btn btn-secondary" href="#"><b style="color: #ffffff01 ">...</b>Dashboard<b style="color: #ffffff01 ">...</b></a>
+        </div>
+        <div class="col-lg-3">
+            <a class="btn btn-secondary" href="#"><b style="color: #ffffff01 ">......</b>Mapa<b style="color: #ffffff01 ">......</b></a>
+        </div>
+    </div>
+</div>
+</center>
 </body>
 </html>
