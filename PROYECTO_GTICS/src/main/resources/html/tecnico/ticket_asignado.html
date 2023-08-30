@@ -81,10 +81,6 @@
         <div class="container-fluid">
             <p class="navbar-brand" style="font-size: small">Inicio / Ticket asignado</p>
             <h3>TICKETS ASIGNADOS</h3>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
     <br>
@@ -92,8 +88,29 @@
 <!---->
 <div class="app-content content" >
    <div id="example_wrapper" class="dataTables_wrapper dt-bootstrap5">
-
-            <center><div class="row">
+       <nav class="navbar bg-body-tertiary">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-sm-12 col-md-6">
+                       <div class="dataTables_length" id="example_length">
+                           <label>
+                               Cantidad a mostrar
+                               <select name="example_length" aria-controls="example" class="form-select form-select-sm">
+                                   <option value="10">10</option>
+                                   <option value="25">25</option>
+                                   <option value="50">50</option>
+                               </select>
+                           </label>
+                       </div>
+                   </div>
+               </div>
+               <form class="d-flex" role="search">
+                   <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+                   <button class="btn btn-outline-success" type="submit">Buscar</button>
+               </form>
+           </div>
+       </nav>
+            <!--<center><div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div class="dataTables_length" id="example_length">
                         <label>
@@ -106,7 +123,7 @@
                         </label>
                     </div>
                 </div>
-            </div></center>
+            </div></center>-->
             <br>
             <div class="content-body">
                 <center><div class="card" style="width: 70rem;">
@@ -133,7 +150,7 @@
                         <td style="background-color: red">URGENTE</td>
                         <td>ICONO</td>
                         <td style="background-color: green">PROGRESO</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">+</button></td>
+                        <td align="center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
                     </tr>
                     <tr>
                         <td>48625933</td>
@@ -143,7 +160,7 @@
                         <td style="background-color: red">URGENTE</td>
                         <td>ICONO</td>
                         <td style="background-color: green">PROGRESO</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">+</button></td>
+                        <td align="center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
                     </tr>
                     <tr>
                         <td>48625933</td>
@@ -153,7 +170,7 @@
                         <td style="background-color: red">URGENTE</td>
                         <td>ICONO</td>
                         <td style="background-color: green">PROGRESO</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">+</button></td>
+                        <td align="center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
                     </tr>
                     <tr>
                         <td>48625933</td>
@@ -163,7 +180,7 @@
                         <td style="background-color: red">URGENTE</td>
                         <td>ICONO</td>
                         <td style="background-color: green">PROGRESO</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">+</button></td>
+                        <td align="center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
                     </tr>
                     <tr>
                         <td>48625933</td>
@@ -173,7 +190,7 @@
                         <td style="background-color: red">URGENTE</td>
                         <td>ICONO</td>
                         <td style="background-color: green">PROGRESO</td>
-                        <td><button type="button" class="btn btn-warning btn-sm">+</button></td>
+                        <td align="center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
                     </tr>
                     </tbody>
                     <tfoot>
@@ -185,17 +202,27 @@
                         <th>Prioridad</th>
                         <th>Ubicación</th>
                         <th>Estado</th>
-                        <th>Ver más</th>
+                        <th align="center">Ver más</th>
                     </tr>
                     </tfoot>
                 </table>
-                </div></center>
+                    <br>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </center>
+                <br>
             </div>
-
    </div>
 </div>
-
-<footer class="pt-3 mt-4 text-body-secondary border-top" >
+<footer class="pt-3 mt-4 text-body-secondary border-top" style="background-color: #ffffff50">
     <center><p style="font-size: small; color: grey">Contacto: ☎ | 2758403 <a href="#" style="color: #5DB6DC01">.... </a> <a href="mailto:nexus.empresatcom@gmail.com">✉ |  nexus.empresatcom@gmail.com</a></p>
     </center>
 </footer>
