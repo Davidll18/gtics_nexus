@@ -40,7 +40,7 @@
 
             <!-- Icono del usuario -->
             <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                <span class="d-none d-md-block dropdown-toggle ps-2 text-light"><img src="../imagenes/icono_usuario.png" width="30px" height="30px"></span>
+                <span class="d-none d-md-block ps-2 text-light"><img src="../imagenes/icono_usuario.png" width="30px" height="30px"></span>
             </a>
 
 
@@ -48,23 +48,11 @@
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li class="dropdown-header">
                     <h6>Rommel Garay</h6>
-                    <span>Usuario</span>
+                    <span>Admin</span>
                 </li>
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-
-                <li>
-                    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath()%>/UsuariosJuegosServlet?a=perfil">
-                        <i class="bi bi-person"></i>
-                        <span>Mi Perfil</span>
-
-                    </a>
-                </li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-
                 <li>
                     <a class="dropdown-item d-flex align-items-center" href="#profile-edit">
                         <i class="bi bi-gear"></i>
@@ -74,21 +62,19 @@
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-
                 <li>
                     <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath()%>/login?action=logout">
                         <i class="bi bi-box-arrow-right"></i>
                         <span>Cerrar sesión</span>
                     </a>
                 </li>
-
             </ul>
 
-            <!-- Modal de las opciones -->
+
+            <!-- MENÚ DESPLEGABLE -->
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
+                <div class="offcanvas-header d-flex justify-content-center align-items-center">
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -97,15 +83,42 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
+                                Gestión de usuario
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Comentarios</a></li>
-                                <li><a class="dropdown-item" href="#">Desplazamiento</a></li>
-                                <li><a class="dropdown-item" href="#">Mi Dashboard</a></li>
-                                <li><a class="dropdown-item" href="#">Tickets Asignados</a></li>
-                                <li><a class="dropdown-item" href="#">Ver mapa</a></li>
+                                <li><a class="dropdown-item" href="#">Crear usuario</a></li>
+                                <li><a class="dropdown-item" href="#">Lista de usuario</a></li>
+                            </ul>
+                        </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gestión de empresas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Crear empresa</a></li>
+                                <li><a class="dropdown-item" href="#">Lista de empresas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gestión de sitios
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Lista de sitios</a></li>
+                                <li><a class="dropdown-item" href="#">Mapa de inventario</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gestión de equipos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Crear equipo</a></li>
+                                <li><a class="dropdown-item" href="#">Lista de equipos</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -120,19 +133,22 @@
 
 </header>
 <br>
-<div class="card text-bg-dark">
-    <img class="bd-placeholder-img bd-placeholder-img-lg card-img" width="100%" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false" src="../imagenes/administrador_fondo.jpg">
+<div class="card text-bg-dark" style="margin-top: 38px;">
+    <img class="bd-placeholder-img bd-placeholder-img-lg card-img" width="100%" role="img"
+         aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"
+         src="../imagenes/administrador_fondo_recortada.jpg" style="overflow: hidden;">
     <div class="card-img-overlay">
-        <br><br><br><br><br><br><br><br><br>
-        <p class="card-text text-start">Nuestros técnicos son la columna vertebral de nuestra empresa,<br>manteniendo a todos conectados. ¡Gracias por tu dedicación!</p>
-
+        <br><br><br><br><br><br>
+        <p class="card-text text-start">Nuestros técnicos son la columna vertebral de nuestra empresa,<br>
+            manteniendo a todos conectados. ¡Gracias por tu dedicación!</p>
     </div>
 </div>
+
 <br>
 
 <h2 class="d-flex justify-content-center align-items-center">¿Qué quieres hacer?</h2> <br><br>
-<div class="container">
-    <div class="row">
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="row ">
         <div class="col-lg-3">
             <p><a class="btn btn-secondary" href="#">Gestión de usuarios</a></p>
         </div>
@@ -140,13 +156,15 @@
             <p><a class="btn btn-secondary" href="#">Gestión de empresas</a></p>
         </div>
         <div class="col-lg-3">
-            <a class="btn btn-secondary" href="#"><b style="color: #ffffff "></b>Sitios<b style="color: #ffffff01 "></b></a>
+            <p><a class="btn btn-secondary" href="#">Gestión de sitios<br></a></p>
         </div>
         <div class="col-lg-3">
-            <a class="btn btn-secondary" href="#"><b style="color: #fff "></b>Equipos<b style="color: #ffffff01 "></b></a>
+            <p><a class="btn btn-secondary" href="#">Gestión de equipos</a></p>
         </div>
+
     </div>
 </div>
+
 
 <br><br>
 <footer class="pt-3 mt-4 text-body-secondary border-top d-flex justify-content-center align-items-center" >
@@ -154,5 +172,6 @@
         <a href="#" style="color: #5DB6DC01">.... </a> <a href="mailto:nexus.empresatcom@gmail.com">
             ✉ |  nexus.empresatcom@gmail.com</a></p>
 </footer>
+
 </body>
 </html>
