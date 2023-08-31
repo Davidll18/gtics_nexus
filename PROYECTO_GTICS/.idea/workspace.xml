@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4043728-cedb-4186-badf-c1f31f112fb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_lista_usuario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/html/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/html/admin/admin_inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_inicio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -47,12 +56,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Escritorio/ProyectoWebJaVagos",
+    "last_opened_file_path": "D:/Escritorio/ProyectoGtics/gtics_nexus/PROYECTO_GTICS/src/main/resources/html/admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +86,7 @@
       <updated>1693427720195</updated>
       <workItem from="1693427723690" duration="11000" />
       <workItem from="1693427751578" duration="782000" />
-      <workItem from="1693441074031" duration="9932000" />
+      <workItem from="1693441074031" duration="13161000" />
     </task>
     <servers />
   </component>
