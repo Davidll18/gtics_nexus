@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Datos del Ticket</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        body {
+            background-color: #C5D9E0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../imagenes/icono_usuario.png" alt="user" width="15" height="25" >
+                    </a>
+                    <ul class="dropdown-menu" style="">
+                        <li><p class="dropdown-item" ><center>USUARIO</center></p></li>
+                        <li><a class="dropdown-item" href="perfil_tecnico.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="../cerrar_sesion/cerrar_sesion.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
 
+                <ul class="nav justify-content-center">
+                    <img src="../imagenes/logogtics.png" alt="LOGO" width="55" height="35">
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="tecnico_inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servicios
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="comentarios.html">Comentarios</a></li>
+                                    <li><a class="dropdown-item" href="desplazamiento.html">Desplazamiento</a></li>
+                                    <li><a class="dropdown-item" href="dashboard.html">Mi Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="ticket_asignado.html">Tickets Asignados</a></li>
+                                    <li><a class="dropdown-item" href="mapa.html">Ver mapa</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+<!-- -->
+<br><p></p><br>
+<main>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <p class="navbar-brand" style="font-size: small">Inicio / Ticket asignado</p>
+            <h3>TICKET ID: 24689314 </h3>
+        </div>
+    </nav>
+    <br>
+</main>
+<!---->
+<center>
+        <div class="card" style="width: 50rem;">
+            <div class="card-body">
+                <h5 class="card-title">Datos del ticket</h5>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-4 mb-4">
+                            <p class="text-start">Prioridad:</p>
+                            <p class="text-start">...URGENTE</p>
+                            <p class="text-start">Nombre de usuario:</p>
+                            <p class="text-start">...SANCHEZ TORRES, Sergio</p>
+                            <p class="text-start">Fecha de apertura:</p>
+                            <p class="text-start">...23/07/2023</p>
+                            <p class="text-start">Fecha de vencimiento:</p>
+                            <p class="text-start">...23/07/2023</p>
+                            <p class="text-start">Servicio relacionado:</p>
+                            <p class="text-start">...Mantenimiento de Gabinetes</p>
+                            <table>
+                                <tr>
+                                    <td>Estado</td>
+                                    <td><div class="btn-group dropend">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cerrado
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Progreso</a></li>
+                                            <li><a class="dropdown-item" href="#">Cerrado</a></li>
+                                        </ul>
+                                    </div></td>
+                                </tr>
+                            </table>
+                            <p class="text-start">Líder Técnico: Tec. Medina</p>
+                            <p class="text-start">Nº Cuadrilla: 8</p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-4 mb-4">
+                            <p class="text-start">Formulario:</p>
+                            <img src="https://www.bttelecomcabinet.com/wp-content/uploads/2018/08/22-1.jpg" width="50"/>
+                            <p class="text-start">Comentario General:</p>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled readonly> Comentario de los clientes: Estoy encantado con mi compra. El producto llegó en perfectas condiciones y exactamente como se describe en la página. Además, el envío fue rápido y el servicio al cliente fue excepcional.
+                            </textarea>
+                            <p class="text-start">Tiempo transcurrido</p>
+                            <p class="text-start">2 hr: 26 min: 03seg</p>
+                        </div>
+                    </div>
+                <button type="button" class="btn btn-primary">Ubicación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/></svg></button>
+                <button type="button" class="btn btn-secondary">Formulario</button>
+                <button type="button" class="btn btn-success">Comentarios</button>
+                <button type="button" class="btn btn-danger">Guardar</button>
+            </div>
+
+        </div>
+</center>
+
+<!---->
+<footer class="pt-3 mt-4 text-body-secondary border-top" style="background-color: #ffffff50">
+    <center><p style="font-size: small; color: grey">Contacto: ☎ | 2758403 <a href="#" style="color: #5DB6DC01">.... </a> <a href="mailto:nexus.empresatcom@gmail.com">✉ |  nexus.empresatcom@gmail.com</a></p>
+    </center>
+</footer>
 </body>
 </html>
