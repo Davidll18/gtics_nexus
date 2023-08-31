@@ -22,7 +22,7 @@
     <!-- Fin DATATABLES -->
 
 
-    <title>Lista Sitios</title>
+    <title>Lista Equipos</title>
     <style>
         img{
             width: 100%;
@@ -145,8 +145,6 @@
     </nav>
 
 
-
-
 </header>
 
 <body>
@@ -156,8 +154,8 @@
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Inicio</li>
-                    <li class="breadcrumb-item active">Gestión de sitios</li>
-                    <li class="breadcrumb-item active">Lista de sitios</li>
+                    <li class="breadcrumb-item active">Gestión de equipos</li>
+                    <li class="breadcrumb-item active">Lista de equipos</li>
                 </ol>
             </nav>
         </div>
@@ -165,9 +163,11 @@
         <br>
 
         <div class="d-flex justify-content-center align-items-center">
-
-            <button type="button" class="btn btn-danger me-5">Agregar nuevo sitio</button>
-            <button type="button" class="btn btn-success">Añadir nuevo campo</button>
+            <button type="button" class="btn btn-primary me-5">Sitio de T. Fija</button>
+            <button type="button" class="btn btn-primary me-5">Sitio de T. Móvil</button>
+            <button type="button" class="btn btn-warning me-5">Agregar nuevo campo</button>
+            <button type="button" class="btn btn-warning me-5">Eliminar campo existente</button>
+            <button type="button" class="btn btn-danger me-5">Añadir nuevo tipo de equipo</button>
         </div>
 
         <br>
@@ -177,201 +177,17 @@
         <table id="example" class="table table-striped" style="width:100%">
         <thead>
         <tr>
-            <th>Usuario</th>
-            <th>Rol</th>
-            <th>Empresa</th>
-            <th>Edad</th>
-            <th>Ubicación</th>
+            <th>#</th>
+            <th>Tipo de equipo</th>
+            <th>Tipo de sitio de implementación</th>
             <th>Opciones</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Ashton Cox</td>
-            <td>Junior Technical Author</td>
-            <td>San Francisco</td>
-            <td>66</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Cedric Kelly</td>
-            <td>Senior Javascript Developer</td>
-            <td>Edinburgh</td>
-            <td>22</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Airi Satou</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>33</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Brielle Williamson</td>
-            <td>Integration Specialist</td>
-            <td>New York</td>
-            <td>61</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Herrod Chandler</td>
-            <td>Sales Assistant</td>
-            <td>San Francisco</td>
-            <td>59</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Rhona Davidson</td>
-            <td>Integration Specialist</td>
-            <td>Tokyo</td>
-            <td>55</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Colleen Hurst</td>
-            <td>Javascript Developer</td>
-            <td>San Francisco</td>
-            <td>39</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Sonya Frost</td>
-            <td>Software Engineer</td>
-            <td>Edinburgh</td>
-            <td>23</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Jena Gaines</td>
-            <td>Office Manager</td>
-            <td>London</td>
-            <td>30</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Quinn Flynn</td>
-            <td>Support Lead</td>
-            <td>Edinburgh</td>
-            <td>22</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
-
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Charde Marshall</td>
-            <td>Regional Director</td>
-            <td>San Francisco</td>
-            <td>36</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
+            <td>1</td>
+            <td>Router</td>
+            <td>Sitio de Telecom. Fija</td>
             <td>
                 <div class="d-flex justify-content-center align-items-center">
 
@@ -383,11 +199,9 @@
         </tr>
 
         <tr>
-            <td>Michael Bruce</td>
-            <td>Javascript Developer</td>
-            <td>Singapore</td>
-            <td>29</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
+            <td>2</td>
+            <td>Switch</td>
+            <td>Sitio de Telecom. Móvil</td>
             <td>
                 <div class="d-flex justify-content-center align-items-center">
 
@@ -397,12 +211,11 @@
                 </div>
             </td>
         </tr>
+
         <tr>
-            <td>Donna Snider</td>
-            <td>Customer Support</td>
-            <td>New York</td>
-            <td>27</td>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
+            <td>3</td>
+            <td>Batería</td>
+            <td>Sitio de Telecom. Fija</td>
             <td>
                 <div class="d-flex justify-content-center align-items-center">
 
@@ -412,24 +225,65 @@
                 </div>
             </td>
         </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Antena</td>
+            <td>Sitio de Telecom. Fija</td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-primary me-2">Editar</button>
+                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Visualizar</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>UPS</td>
+            <td>Sitio de Telecom. Móvil</td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-primary me-2">Editar</button>
+                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Visualizar</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Torre</td>
+            <td>Sitio de Telecom. Móvil</td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-primary me-2">Editar</button>
+                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Visualizar</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>BBU</td>
+            <td>Sitio de Telecom. Fija</td>
+            <td>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <button type="button" class="btn btn-primary me-2">Editar</button>
+                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Visualizar</button>
+                </div>
+            </td>
+        </tr>
+
         </tbody>
-        <tfoot>
-        <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <td><i class="bi bi-geo-alt-fill center"></i></td>
-            <td>
-                <div class="d-flex justify-content-center align-items-center">
 
-                    <button type="button" class="btn btn-primary me-2">Editar</button>
-                    <button type="button" class="btn btn-danger me-2">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Visualizar</button>
-                </div>
-            </td>
-        </tr>
-        </tfoot>
     </table>
 
     </div>
