@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3"></script>
 
     <!-- Importamos los estilos para los datatables -->
     <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
@@ -162,64 +163,57 @@
             </nav>
         </div>
 
+        <div class="col-lg-4">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Buscador">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+        </div>
+
         <br>
-        <div class="rounded p-5" style="background-color: #F6F6F6;">
-            <form method="POST" action="#" enctype="multipart/form-data">
-                <div class="row">
+        <div class="row col-md-12 ms-sm-auto col-lg-12 px-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div id="mapa" style="width: 1280px; height: 500px">
+                    </div>
+                    <script type="text/javascript">
+                        var divMapa = document.getElementById('mapa');
+                        navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+                        function fn_mal(){}
+                        function fn_ok(rta){
+                            var lat = rta.coords.latitude;
+                            var lon = rta.coords.longitude;
 
-                    <div class="col-md-6">
-                        <div class="pagetitle">
-                            <h3>Creación de usuario</h3>
-                        </div>
-                        <input type="hidden" class="form-control" name="idJuego" id="idJuego">
+                            var gLatLon = new google.maps.LatLng( lat , lon);
+                            var objConfig = {
+                                zoom: 17,
+                                center: gLatLon
+                            }
+                            var gMapa = new google.maps.Map(divMapa , objConfig);
+                            var objConfigMarker = {
+                                position: gLatLon,
+                                map: gMapa,
+                                title: "Usted se encuentra aquí"
+                            }
+                            var gMarker = new google.maps.Marker(objConfigMarker);
+                        }
+                    </script>
+                    <div class="position-absolute top-0 end-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Leyenda</h4>
+                                <p style="color: red"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg> <b style="color:black;" class="fw-light">Inventarios</b></p>
 
-                        <div class="mb-3">
-                            <label for="nombre">Nombres:</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="descripcion">Apellidos:</label>
-                            <input type="text" class="form-control" name="descripcion" id="descripcion" >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="precio">Empresa:</label>
-                            <input type="text" class="form-control" name="precio" id="precio">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="descuento">Correo:</label>
-                            <input type="text" class="form-control" name="descuento" id="descuento" >
-                        </div>
-
-                        <div class="input-group mb-3">
-                            <label for="consola">Cargo:</label>
-                            <div class="col-12">
-                                <select name="consola" id="consola" class="form-control">
-                                    <option value="Cargo1">Analista de OyM</option>
-                                    <option value="Cargo2">Analista de Planificación</option>
-                                    <option value="Cargo3">Analista de Supervisor de campo</option>
-                                    <option value="Cargo4">Técnicos</option>
-                                </select>
                             </div>
                         </div>
                     </div>
-                    <br><br>
-                    <div class="col-md-6">
-                        <div class="pagetitle text-white">
-                            <h3>. </h3>
-                        </div>
-                        <div class="mb-3">
-                            <label for="descuento">Foto de perfil:</label>
-                            <input type="text" class="form-control" name="descuento" id="descuento" >
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Crear</button>
-                    </div>
                 </div>
-            </form>
+            </div>
         </div>
+
+
         <br><br>
         <button type="submit" class="btn btn-danger">Regresar</button>
 

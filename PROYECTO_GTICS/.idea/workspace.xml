@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4043728-cedb-4186-badf-c1f31f112fb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_sitio_mapa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/admin/admin_lista_equipos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_lista_equipos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/admin/admin_lista_sitios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_lista_sitios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/admin/admin_sitio_mapa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/html/admin/admin_sitio_mapa.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Escritorio/ProyectoGtics/gtics_nexus/PROYECTO_GTICS/src/main/resources/html/admin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Escritorio/ProyectoGtics/gtics_nexus/PROYECTO_GTICS/src/main/resources/html/admin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Escritorio\ProyectoGtics\gtics_nexus\PROYECTO_GTICS\src\main\resources\html\admin" />
@@ -85,7 +87,8 @@
       <updated>1693427720195</updated>
       <workItem from="1693427723690" duration="11000" />
       <workItem from="1693427751578" duration="782000" />
-      <workItem from="1693441074031" duration="21192000" />
+      <workItem from="1693441074031" duration="21325000" />
+      <workItem from="1693507925391" duration="2662000" />
     </task>
     <servers />
   </component>

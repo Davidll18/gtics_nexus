@@ -165,9 +165,43 @@
         <div class="d-flex justify-content-center align-items-center">
             <button type="button" class="btn btn-primary me-5">Sitio de T. Fija</button>
             <button type="button" class="btn btn-primary me-5">Sitio de T. Móvil</button>
-            <button type="button" class="btn btn-warning me-5">Agregar nuevo campo</button>
+            <button type="button" class="btn btn-warning me-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Agregar nuevo campo</button>
             <button type="button" class="btn btn-warning me-5">Eliminar campo existente</button>
             <button type="button" class="btn btn-danger me-5">Añadir nuevo tipo de equipo</button>
+
+            <!-- MODAL -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Añadir nuevo campo</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="descripcion">Nombre del campo:</label>
+                                <input type="text" class="form-control" name="descripcion" id="descripcion">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="consola">Formato del campo:</label>
+                                <div class="col-12">
+                                    <select name="consola" id="consola" class="form-control">
+                                        <option value="Cargo1">Boolean</option>
+                                        <option value="Cargo2">String</option>
+                                        <option value="Cargo3">Int</option>
+                                        <option value="Cargo4">Double</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
         <br>
