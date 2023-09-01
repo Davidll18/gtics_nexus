@@ -71,7 +71,7 @@
                     <hr class="dropdown-divider">
                 </li>
                 <li>
-                    <a class="dropdown-item d-flex align-items-center" href="#profile-edit">
+                    <a class="dropdown-item d-flex align-items-center" href="editar_perfil.html">
                         <i class="bi bi-gear me-2"></i>
                         <span>Configuración</span>
                     </a>
@@ -80,7 +80,7 @@
                     <hr class="dropdown-divider">
                 </li>
                 <li>
-                    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath()%>/login?action=logout">
+                    <a class="dropdown-item d-flex align-items-center" href="../cerrar_sesion/cerrar_sesion.html">
                         <i class="bi bi-box-arrow-right me-2"></i>
                         <span>Cerrar sesión</span>
                     </a>
@@ -96,15 +96,15 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="admin_inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Gestión de usuario
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Crear usuario</a></li>
-                                <li><a class="dropdown-item" href="#">Lista de usuario</a></li>
+                                <li><a class="dropdown-item" href="admin_crear_usuario.html">Crear usuario</a></li>
+                                <li><a class="dropdown-item" href="admin_lista_usuario.html">Lista de usuario</a></li>
                             </ul>
                         </li>
 
@@ -113,8 +113,8 @@
                                 Gestión de empresas
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Crear empresa</a></li>
-                                <li><a class="dropdown-item" href="#">Lista de empresas</a></li>
+                                <li><a class="dropdown-item" href="admin_crear_empresa.html">Crear empresa</a></li>
+                                <li><a class="dropdown-item" href="admin_lista_empresas.html">Lista de empresas</a></li>
                             </ul>
                         </li>
 
@@ -123,8 +123,8 @@
                                 Gestión de sitios
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Lista de sitios</a></li>
-                                <li><a class="dropdown-item" href="#">Mapa de inventario</a></li>
+                                <li><a class="dropdown-item" href="admin_lista_sitios.html">Lista de sitios</a></li>
+                                <li><a class="dropdown-item" href="admin_sitio_mapa.html">Mapa de inventario</a></li>
                             </ul>
                         </li>
 
@@ -134,8 +134,8 @@
                                 Gestión de equipos
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Crear equipo</a></li>
-                                <li><a class="dropdown-item" href="#">Lista de equipos</a></li>
+                                <li><a class="dropdown-item" href="admin_crear_equipo.html">Crear equipo</a></li>
+                                <li><a class="dropdown-item" href="admin_lista_equipos.html">Lista de equipos</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -144,10 +144,6 @@
 
         </div>
     </nav>
-
-
-
-
 </header>
 
 <body>
@@ -215,7 +211,7 @@
 
 
         <br><br>
-        <button type="submit" class="btn btn-danger">Regresar</button>
+        <a href="admin_lista_sitios.html" class="btn btn-danger">Regresar</a>
 
 
 
